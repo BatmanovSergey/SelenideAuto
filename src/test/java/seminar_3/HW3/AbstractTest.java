@@ -15,7 +15,7 @@ public class AbstractTest {
 //        options.put("enableVNC", true);
 //        options.put("enableLog", true);
 //        Configuration.browserCapabilities.setCapability("selenoid:options", options);
-
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         Selenide.open("https://test-stand.gb.ru/login");
     }
 

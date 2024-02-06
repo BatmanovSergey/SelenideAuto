@@ -19,6 +19,7 @@ public class SelenideSeminarTest {
 
     @BeforeEach
     void init() {
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         Selenide.open("https://test-stand.gb.ru/login");
     }
 

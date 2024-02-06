@@ -41,7 +41,7 @@ public class SelinoidSeminarTest extends AbstractTest {
         Assertions.assertTrue(profilePageS3.getUploadFileNameS3().contains("anime.jpeg"));
         Assertions.assertEquals("C:\\fakepath\\anime.jpeg",profilePageS3.getUploadFileNameS3());
         // кавычки " экранируются \ -> \", а обратный слэш \ экранируется \\
-        System.out.println(profilePageS3.getUploadFileNameS3());
+//        System.out.println(profilePageS3.getUploadFileNameS3());
         Selenide.sleep(10000L);
     }
 }
