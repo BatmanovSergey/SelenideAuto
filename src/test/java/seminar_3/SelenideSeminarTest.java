@@ -6,12 +6,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import java.time.Duration;
-import java.util.List;
 
 import static com.codeborne.selenide.Selenide.page;
 
@@ -22,7 +16,6 @@ public class SelenideSeminarTest {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         Selenide.open("https://test-stand.gb.ru/login");
     }
-
     @Test
     void profileTest () {
         LoginPageS3 loginPageS3 = page(LoginPageS3.class);
@@ -38,7 +31,6 @@ public class SelenideSeminarTest {
         ProfilePageS3 profilePageS3 = Selenide.page(ProfilePageS3.class);
         Assertions.assertEquals(profilePageS3.getFullNameTextS3(),profilePageS3.getH2FullNameTextS3());
     }
-
     @AfterEach
     void close() {
         WebDriverRunner.closeWebDriver();
