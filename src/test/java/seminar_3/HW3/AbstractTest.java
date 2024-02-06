@@ -8,7 +8,7 @@ import org.junit.jupiter.api.BeforeEach;
 public class AbstractTest {
     @BeforeEach
     void init() {
-//        Configuration.remote = "https://localhost:4444/wd/hub";
+//        Configuration.remote = "http://localhost:4444/wd/hub";
 ////        Configuration.browser = "opera";
 ////        Configuration.browserVersion = "112";
 //        Map<String, Object> options = new HashMap<>();
